@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>GetADDA Scraper Plugin</title>
+    <script src="ext.js"></script>
+    <style>
+			img{float:left;}
+			div.row{padding: 10px 0;height: 10px;}
+			div.label{float:left; width:100px;}
+			div.input{float:left; max-width:400px;}
+			div.input input{width: 400px;}
+			div.input textarea{width: 400px; height: 100px;}
+    </style>
+  </head>
+  <body style="width: 500px;">
+    <h1>GetADDA:  Fetch Info</h1>
+	<div class="row">
+		<button id="fetchinfo">Fetch Info!</button>
+		<input type="hidden" name="url" id="url" />
+		<input type="hidden" name="merchant" id="merchant" />
+		<label id="response"></label>
+	</div>
+  </body>
+</html>

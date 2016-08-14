@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "GetADDA ext plugin",
+  "description": "This extension fetches information on website and stores in GetADDA's information storage",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "getAdda.png",
+   "default_popup": "info.html"
+  },
+  "background": {
+    "scripts": ["ext.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+		{
+			"matches": ["http://www.justdial.com/*"],
+			"js" : ["content.js"]
+		}
+  ],
+  "permissions": [
+   "activeTab",
+   "tabs",
+   "tabCapture",
+	 "http://*/*"
+   ]
+}
